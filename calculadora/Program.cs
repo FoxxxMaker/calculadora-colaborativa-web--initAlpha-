@@ -11,28 +11,7 @@ namespace CalculadoraWeb
 
             int escolha = int.Parse(Console.ReadLine());
 
-            switch(escolha)
-            {
-                case 1:
-                Adicao(a, b);
-                break;
-
-                case 2:
-                subtracao(a, b);
-                break;
-
-                case 3:
-                Multiplicacao(a,b);
-                break;
-
-                case 4:
-                Divisao(a, b);
-                break;
-
-                case 5:
-                Potenciacao(a, b);
-                break;
-            }
+           
         }
 
         // Integrante 1
@@ -82,3 +61,4 @@ namespace CalculadoraWeb
         }
     }
 }
+
