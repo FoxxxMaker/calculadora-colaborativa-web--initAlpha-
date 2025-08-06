@@ -29,10 +29,10 @@ namespace CalculadoraWeb
         // }
 
         // Integrante 4
-        // public static double Divisao(double a, double b)
-        // {
-        //     // Implementar aqui
-        // }
+         public static double Divisao(double a, double b)
+         {  
+              return a/b;
+        }
 
 
   // Integrante 5
