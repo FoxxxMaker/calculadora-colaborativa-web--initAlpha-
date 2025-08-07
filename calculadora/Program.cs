@@ -10,8 +10,38 @@ namespace CalculadoraWeb
             System.Console.WriteLine("Escolha o calculo que deseja: ");
 
             int escolha = int.Parse(Console.ReadLine());
+            
+        switch (operador)
+        {
+            case '+':
+                resultado = num1 + num2;
+                Console.WriteLine($"Resultado: {resultado}");
+                break;
+            case '-':
+                resultado = num1 - num2;
+                Console.WriteLine($"Resultado: {resultado}");
+                break;
+            case '*':
+                resultado = num1 * num2;
+                Console.WriteLine($"Resultado: {resultado}");
+                break;
+            case '/':
+                if (num2 != 0)
+                {
+                    resultado = num1 / num2;
+                    Console.WriteLine($"Resultado: {resultado}");
+                }
+                else
+                {
+                    Console.WriteLine("Erro: Divisão por zero não é permitida.");
+                }
+                break;
+            default:
+                Console.WriteLine("Operador inválido.");
+                break;
 
-           
+        }
+    }
         }
 
         // Integrante 1
@@ -61,4 +91,5 @@ namespace CalculadoraWeb
         }
     }
 }
+
 
