@@ -7,43 +7,23 @@ namespace CalculadoraWeb
         static void Main(string[] args)
         {
             Console.WriteLine("Calculadora Colaborativa Web");
-            System.Console.WriteLine("Escolha o calculo que deseja: ");
+            System.Console.WriteLine("Escolha o cálculo que deseja: 1. Adição, 2. Subtração, 3. Multiplicação, 4. Divisão.");
 
             int escolha = int.Parse(Console.ReadLine());
-            
-        switch (operador)
-        {
-            case '+':
-                resultado = num1 + num2;
-                Console.WriteLine($"Resultado: {resultado}");
+            switch (escolha)
+                Case 1: 
+            Adição(); 
+            break;
+                Case 2: 
+            Subtração();
+            break;
+                Case 3: 
+            Multiplicação();
+            break;
+                Case 4: 
+            Divisão()
                 break;
-            case '-':
-                resultado = num1 - num2;
-                Console.WriteLine($"Resultado: {resultado}");
-                break;
-            case '*':
-                resultado = num1 * num2;
-                Console.WriteLine($"Resultado: {resultado}");
-                break;
-            case '/':
-                if (num2 != 0)
-                {
-                    resultado = num1 / num2;
-                    Console.WriteLine($"Resultado: {resultado}");
-                }
-                else
-                {
-                    Console.WriteLine("Erro: Divisão por zero não é permitida.");
-                }
-                break;
-            default:
-                Console.WriteLine("Operador inválido.");
-                break;
-
-        }
-    }
-        }
-
+                
         // Integrante 1
         public static double Adicao(double a, double b)
         {
@@ -91,5 +71,6 @@ namespace CalculadoraWeb
         }
     }
 }
+
 
 
